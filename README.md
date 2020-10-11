@@ -1,68 +1,24 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## React with SWR
 
-## Available Scripts
+React Hook SWR to deliver a better user experience (UX), the secret lies in how the tool handles the data that was fetched regardless of the back end implementation (Java, Node.js PHP) and the API that performs the search in the Front End, for example JavaScript fetch API and Axios widely used for this purpose.
 
-In the project directory, you can run:
+The tool in question does not replace the fetch API or Axios, it is a layer that runs on top of these technologies - like a Wrapper (something that involves). Below we will see in more detail.
 
-### `yarn start`
+SWR is an acronym for Stale-While-Revalidate (literal translation: bring the old data while assessing whether it has new data). This is a strategy that takes the data from the cache and then, under the hood, a request is made to the back end to bring the new data if it has it, reloading the list with the new data, so that it is transparent to the user.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+With SWR, components will receive the flow of data updates constantly and automatically. The user interface will always be fast and responsive.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# What the SWR delivers:
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- A fast, lightweight and reusable data fetching;
+- Integrated cache and prevents request redundancy;
+- Real-time experience;
+- TypeScript support;
+- Possibility to be used in React Native;
+- Fast navigation between pages;
+- Revalidation of data when the screen receives focus (revalidate-on-focus);
+- Data revalidation when reconnecting to the Internet;
+- Mutation of local data with (Optimistic UI);
+- React Suspense;
+- Agnostic API, can be used with REST or GraphQL;
+- Agnostic back end, no matter what language was implemented.
