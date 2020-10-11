@@ -1,4 +1,4 @@
-## React with SWR
+# React with SWR
 
 React Hook SWR to deliver a better user experience (UX), the secret lies in how the tool handles the data that was fetched regardless of the back end implementation (Java, Node.js PHP) and the API that performs the search in the Front End, for example JavaScript fetch API and Axios widely used for this purpose.
 
@@ -8,7 +8,7 @@ SWR is an acronym for Stale-While-Revalidate (literal translation: bring the old
 
 With SWR, components will receive the flow of data updates constantly and automatically. The user interface will always be fast and responsive.
 
-# What the SWR delivers:
+## What the SWR delivers:
 
 - A fast, lightweight and reusable data fetching;
 - Integrated cache and prevents request redundancy;
